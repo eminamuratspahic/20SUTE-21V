@@ -91,7 +91,7 @@ namespace Lab01.Domain.Tests
             sut.Songs[0].Should().BeSameAs(song);
         }
 
-        [Fact]
+        [Fact(Skip = "demo")]
         public void songs_by_abba_are_not_allowed()
         {
             // arrange
