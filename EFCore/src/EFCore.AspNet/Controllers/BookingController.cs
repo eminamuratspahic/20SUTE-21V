@@ -37,6 +37,16 @@ namespace EFCore.AspNet.Controllers
             return Ok();
         }
 
+        [HttpGet]
+        public IActionResult GetBooking([FromQuery] string id)
+        {
+            var existingBooking = bookingService.GetBooking(id);
+
+            if (existingBooking == null) return NotFound();
+
+            return Ok(existingBooking);
+        }
+
         public class CancelBookingRequest
         {
             public string Id { get; set; }

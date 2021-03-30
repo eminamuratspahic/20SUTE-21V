@@ -31,7 +31,7 @@ namespace EFCore.Domain
 
         public Booking GetBooking(string id)
         {
-            return new Booking(id, DateTime.UtcNow);
+            return repository.GetById(id);
         }
 
         // Input parameters to method CreateBooking
