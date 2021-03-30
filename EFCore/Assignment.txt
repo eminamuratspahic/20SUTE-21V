@@ -1,0 +1,17 @@
+
+Working in groups:
+
+Step through the api tests in the debugger, line by line. Try to follow what's
+happening in the code.
+
+Add the following tests to your API tests project:
+
+Cancel booking endpoint. Cancellation should find an existing booking and mark it as cancelled.
+
+Change booking time endpoint. Update should find existing booking modify the time. A charge should be applied if the update is within
+20 days of the original booking date.
+
+Bonus:
+
+Retrieve an existing booking endpoint. Fetch by booking id.
+Delete booking endpoint.
