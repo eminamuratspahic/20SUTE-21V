@@ -6,6 +6,14 @@ namespace Lab05.Domain
 {    
     public class TestClass
     {
-   
+
+
+        public void TestRandomDate(DateTime date)
+        {
+            if (DateTime == 2018)
+
+
+        }
+       
     }
 }
